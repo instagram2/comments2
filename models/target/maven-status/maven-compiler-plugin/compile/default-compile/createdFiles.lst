@@ -1,0 +1,3 @@
+instagram2\comments\models\entities\CommentEntity.class
+instagram2\comments\models\converters\InstantAtributeConverter.class
+instagram2\comments\models\converters\CommentConverter.class

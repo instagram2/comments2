@@ -1,0 +1,55 @@
+kumuluzee:
+  name: comments
+  env:
+    name: dev
+  version: 1.0.0
+  server:
+    base-url: http://localhost:8084
+    http:
+      port: 8084
+  datasources:
+    - jndi-name: jdbc/postgres
+      connection-url: jdbc:postgresql://localhost:5432/comments
+      username: dbuser
+      password: postgres
+      max-pool-size: 20
+  config:
+    etcd:
+      hosts: http://etcd:2379
+  discovery:
+    etcd:
+      hosts: http://etcd:2379
+
+  health:
+    checks:
+      etcd-health-check:
+        connection-url: http://etcd:2379/health
+
+  logs:
+    config-file: '<?xml version="1.0" encoding="UTF-8"?>
+      <Configuration name="comments">
+      <Appenders>
+      <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d %p %marker %m %X %ex %n"/>
+      </Console>
+      <Socket name="logstash" host="4b9dc93a-9946-44f6-9257-fb7c1519afbc-ls.logit.io" port="11774" protocol="tcp">
+      <JSONLayout complete="false" compact="true" eventEol="true" charset="UTF-8" properties="true"/>
+      </Socket>
+      </Appenders>
+      <Loggers>
+      <Root level="all">
+      <AppenderRef ref="console" level="info"/>
+      <AppenderRef ref="logstash" level="trace"/>
+      </Root>
+      </Loggers>
+      </Configuration>'
+
+  metrics:
+    web-instrumentation:
+      - name: comments-endpoint
+        url-pattern: /v1/comments/*
+
+  config-properties:
+    dburl: jdbc:postgresql://localhost:5432/comments
+    dbuser: dbuser
+    dbpass: postgres
