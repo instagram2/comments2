@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: comments
-          image: instagram2/comments-api:1.0.0-SNAPSHOT-13.1
+          image: instagram2/comments-api:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8084
