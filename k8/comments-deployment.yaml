@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: comments-deployment
+  name: comments2-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: comments
+      app: comments2
   template:
     metadata:
       labels:
-        app: comments
+        app: comments2
     spec:
       containers:
-        - name: comments
-          image: instagram2/comments-api:latest
+        - name: comments2
+          image: instagram2/comments2:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8084
@@ -37,12 +37,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: comments
+  name: comments2
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - port: 8084
       protocol: TCP
       targetPort: server
   selector:
-    app: comments
+    app: comments2
