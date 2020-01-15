@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b79b207a-3057-4a1c-b4f0-51416e5d3224" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/instagram2/comments/api/v1/CommentsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/instagram2/comments/api/v1/CommentsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8/comments-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8/comments-deployment.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Faks\Magisterij\1.letnik\Racunalniske_storitve_v_oblaku\instagram2\comments2" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -61,6 +65,7 @@
       <updated>1579017511246</updated>
       <workItem from="1579017515062" duration="16531000" />
       <workItem from="1579052699234" duration="98000" />
+      <workItem from="1579081316935" duration="361000" />
     </task>
     <servers />
   </component>
@@ -72,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
