@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b79b207a-3057-4a1c-b4f0-51416e5d3224" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../login" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,7 +63,7 @@
       <updated>1579017511246</updated>
       <workItem from="1579017515062" duration="16531000" />
       <workItem from="1579052699234" duration="98000" />
-      <workItem from="1579081316935" duration="873000" />
+      <workItem from="1579081316935" duration="2530000" />
     </task>
     <servers />
   </component>

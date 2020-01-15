@@ -1,2 +1,3 @@
+META-INF\services\javax.ws.rs.core.Application
 instagram2\comments\api\v1\CommentsApplication.class
 instagram2\comments\api\v1\resources\CommentsResource.class
